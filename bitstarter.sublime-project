@@ -1,0 +1,10 @@
+{
+	"url":"http://localhost:5000",
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "D:\\server\\bitstarter"
+		}
+	]
+}

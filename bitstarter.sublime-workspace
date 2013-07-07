@@ -1,0 +1,447 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "var express = require('express');\nvar fs = require('fs');\n\nvar app = express.createServer(express.logger());\n\napp.get('/', function(request, response) {\n\n	var index = fs.readFileSync('index.html');	\n  response.send(index.toString());\n});\n\nvar port = process.env.PORT || 5000;\napp.listen(port, function() {\n  console.log(\"Listening on \" + port);\n});",
+			"file": "web.js",
+			"file_size": 347,
+			"file_write_time": 130176682140925552,
+			"settings":
+			{
+				"buffer_size": 348,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "homework/homework3-part1",
+			"settings":
+			{
+				"buffer_size": 78,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 120,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bitstarter.sublime-project",
+			"settings":
+			{
+				"buffer_size": 126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 26,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nEmmet:\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n  \n\n\nAdvancedNewFile:\n---------------\n\n  Thank you for installing the AdvancedNewFile plugin.\n  \n  For more information please visit https://github.com/skuroda/Sublime-AdvancedNewFile.\n  \n  Note you may need to restart Sublime Text 2 after installing this plugin.\n  \n  If you have any questions, comments, or run into issues, please let me know! Hope you enjoy the plugin.\n  \n  Thank you!\n\n\nSublimeLinter:\n-------------\n\n  SublimeLinter\n  =============\n  \n  SublimeLinter is a plugin that supports \"lint\" programs (known as \"linters\"). SublimeLinter highlights\n  lines of code the linter deems to contain (potential) errors. It also\n  supports highlighting special annotations (for example: TODO) so that they\n  can be quickly located.\n  \n  SublimeLinter has built in linters for the following languages:\n  \n  * C/C++ - lint via `cppcheck`\n  * CoffeeScript - lint via `coffee -s -l`\n  * CSS - lint via built-in [csslint](http://csslint.net)\n  * Git Commit Messages - lint via built-in module based on [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).\n  * Haml - syntax check via `haml -c`\n  * HTML - lint via `tidy` (actually [tidy for HTML5](http://w3c.github.com/tidy-html5/))\n  * Java - lint via `javac -Xlint`\n  * JavaScript - lint via built in [jshint](http://jshint.org), [jslint](http://jslint.com), or the [closure linter (gjslint)](https://developers.google.com/closure/utilities/docs/linter_howto) (if installed)\n  * Lua - syntax check via `luac`\n  * Objective-J - lint via built-in [capp_lint](https://github.com/aparajita/capp_lint)\n  * Perl - lint via [Perl:Critic](http://perlcritic.com/) or syntax+deprecation check via `perl -c`\n  * PHP - syntax check via `php -l`\n  * Puppet - syntax check via `puppet parser validate`\n  * Python - native, moderately-complete lint\n  * Ruby - syntax check via `ruby -wc`\n  * XML - lint via `xmllint`\n  \n  \n  For more information:\n  ---------------------\n  Please take the time to read the documentation:\n  \n  * Online - https://github.com/SublimeLinter/SublimeLinter\n  * Sublime Text - Select Preferences->Package Settings->SublimeLinter->README\n  \n  \n  IMPORTANT\n  \n  Do NOT edit the default SublimeLinter settings. Your changes will be lost\n  when SublimeLinter is updated. ALWAYS edit the user SublimeLinter settings\n  by selecting \"Preferences->Package Settings->SublimeLinter->Settings - User\".\n  Note that individual settings you include in your user settings will **completely**\n  replace the corresponding default setting, so you must provide that setting in its entirety.\n  \n\n\nSublimeLinter Beta:\n------------------\n\n  SublimeLinter\n  =============\n  \n  SublimeLinter is a plugin that supports \"lint\" programs (known as \"linters\"). SublimeLinter highlights\n  lines of code the linter deems to contain (potential) errors. It also\n  supports highlighting special annotations (for example: TODO) so that they\n  can be quickly located.\n  \n  SublimeLinter has built in linters for the following languages:\n  \n  * C/C++ - lint via `cppcheck`\n  * CoffeeScript - lint via `coffee -s -l`\n  * CSS - lint via built-in [csslint](http://csslint.net)\n  * Git Commit Messages - lint via built-in module based on [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).\n  * Haml - syntax check via `haml -c`\n  * HTML - lint via `tidy` (actually [tidy for HTML5](http://w3c.github.com/tidy-html5/))\n  * Java - lint via `javac -Xlint`\n  * JavaScript - lint via built in [jshint](http://jshint.org), [jslint](http://jslint.com), or the [closure linter (gjslint)](https://developers.google.com/closure/utilities/docs/linter_howto) (if installed)\n  * Lua - syntax check via `luac`\n  * Objective-J - lint via built-in [capp_lint](https://github.com/aparajita/capp_lint)\n  * Perl - lint via [Perl:Critic](http://perlcritic.com/) or syntax+deprecation check via `perl -c`\n  * PHP - syntax check via `php -l`\n  * Puppet - syntax check via `puppet parser validate`\n  * Python - native, moderately-complete lint\n  * Ruby - syntax check via `ruby -wc`\n  * XML - lint via `xmllint`\n  \n  \n  For more information:\n  ---------------------\n  Please take the time to read the documentation:\n  \n  * Online - https://github.com/SublimeLinter/SublimeLinter\n  * Sublime Text - Select Preferences->Package Settings->SublimeLinter->README\n  \n  \n  IMPORTANT\n  \n  Do NOT edit the default SublimeLinter settings. Your changes will be lost\n  when SublimeLinter is updated. ALWAYS edit the user SublimeLinter settings\n  by selecting \"Preferences->Package Settings->SublimeLinter->Settings - User\".\n  Note that individual settings you include in your user settings will **completely**\n  replace the corresponding default setting, so you must provide that setting in its entirety.\n  \n",
+			"settings":
+			{
+				"buffer_size": 6490,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"fetch",
+				"Fetch: Manage"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"prefi",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"prefixr",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"snipp",
+				"Snippet: html"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package COntro",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 405.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"ls",
+			"dir",
+			"dirf"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/Fetch.sublime-settings",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/Prefixr/Default (Windows).sublime-keymap",
+		"/D/server/bitstarter/.gitignore",
+		"/D/server/bitstarter/Procfile",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/server/bitstarter/homework3-part1",
+		"/D/server/bitstarter/index.html",
+		"/D/server/bitstarter/web.js",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/D/cygwin/home/User/.ssh/config"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"head",
+			">",
+			"<",
+			"charset",
+			"head",
+			"lang",
+			"head",
+			"html",
+			"<"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "web.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								348,
+								348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "homework/homework3-part1",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 78,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "bitstarter.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								26
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1535,
+								1494
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "bitstarter.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"",
+				"web.js"
+			],
+			[
+				"procfile",
+				"Procfile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
