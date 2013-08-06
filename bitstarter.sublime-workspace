@@ -3,26 +3,31 @@
 	{
 		"selected_items":
 		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fsi",
+				"font-size"
+			],
+			[
+				"d",
+				"d396qusza40orc"
+			],
+			[
+				"text",
+				"text-align"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "var express = require('express');\nvar fs = require('fs');\n\nvar app = express.createServer(express.logger());\n\napp.get('/', function(request, response) {\n\n	var index = fs.readFileSync('index.html');	\n  response.send(index.toString());\n});\n\nvar port = process.env.PORT || 5000;\napp.listen(port, function() {\n  console.log(\"Listening on \" + port);\n});",
-			"file": "web.js",
-			"file_size": 347,
-			"file_write_time": 130176682140925552,
+			"file": "grader.js",
 			"settings":
 			{
-				"buffer_size": 348,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "homework/homework3-part1",
-			"settings":
-			{
-				"buffer_size": 78,
+				"buffer_size": 3128,
 				"line_ending": "Windows"
 			}
 		},
@@ -30,62 +35,106 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 120,
+				"buffer_size": 9581,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "bitstarter.sublime-project",
+			"file": "homework/homework4-1.txt",
 			"settings":
 			{
-				"buffer_size": 126,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "style.css",
-			"settings":
-			{
-				"buffer_size": 26,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nEmmet:\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n  \n\n\nAdvancedNewFile:\n---------------\n\n  Thank you for installing the AdvancedNewFile plugin.\n  \n  For more information please visit https://github.com/skuroda/Sublime-AdvancedNewFile.\n  \n  Note you may need to restart Sublime Text 2 after installing this plugin.\n  \n  If you have any questions, comments, or run into issues, please let me know! Hope you enjoy the plugin.\n  \n  Thank you!\n\n\nSublimeLinter:\n-------------\n\n  SublimeLinter\n  =============\n  \n  SublimeLinter is a plugin that supports \"lint\" programs (known as \"linters\"). SublimeLinter highlights\n  lines of code the linter deems to contain (potential) errors. It also\n  supports highlighting special annotations (for example: TODO) so that they\n  can be quickly located.\n  \n  SublimeLinter has built in linters for the following languages:\n  \n  * C/C++ - lint via `cppcheck`\n  * CoffeeScript - lint via `coffee -s -l`\n  * CSS - lint via built-in [csslint](http://csslint.net)\n  * Git Commit Messages - lint via built-in module based on [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).\n  * Haml - syntax check via `haml -c`\n  * HTML - lint via `tidy` (actually [tidy for HTML5](http://w3c.github.com/tidy-html5/))\n  * Java - lint via `javac -Xlint`\n  * JavaScript - lint via built in [jshint](http://jshint.org), [jslint](http://jslint.com), or the [closure linter (gjslint)](https://developers.google.com/closure/utilities/docs/linter_howto) (if installed)\n  * Lua - syntax check via `luac`\n  * Objective-J - lint via built-in [capp_lint](https://github.com/aparajita/capp_lint)\n  * Perl - lint via [Perl:Critic](http://perlcritic.com/) or syntax+deprecation check via `perl -c`\n  * PHP - syntax check via `php -l`\n  * Puppet - syntax check via `puppet parser validate`\n  * Python - native, moderately-complete lint\n  * Ruby - syntax check via `ruby -wc`\n  * XML - lint via `xmllint`\n  \n  \n  For more information:\n  ---------------------\n  Please take the time to read the documentation:\n  \n  * Online - https://github.com/SublimeLinter/SublimeLinter\n  * Sublime Text - Select Preferences->Package Settings->SublimeLinter->README\n  \n  \n  IMPORTANT\n  \n  Do NOT edit the default SublimeLinter settings. Your changes will be lost\n  when SublimeLinter is updated. ALWAYS edit the user SublimeLinter settings\n  by selecting \"Preferences->Package Settings->SublimeLinter->Settings - User\".\n  Note that individual settings you include in your user settings will **completely**\n  replace the corresponding default setting, so you must provide that setting in its entirety.\n  \n\n\nSublimeLinter Beta:\n------------------\n\n  SublimeLinter\n  =============\n  \n  SublimeLinter is a plugin that supports \"lint\" programs (known as \"linters\"). SublimeLinter highlights\n  lines of code the linter deems to contain (potential) errors. It also\n  supports highlighting special annotations (for example: TODO) so that they\n  can be quickly located.\n  \n  SublimeLinter has built in linters for the following languages:\n  \n  * C/C++ - lint via `cppcheck`\n  * CoffeeScript - lint via `coffee -s -l`\n  * CSS - lint via built-in [csslint](http://csslint.net)\n  * Git Commit Messages - lint via built-in module based on [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).\n  * Haml - syntax check via `haml -c`\n  * HTML - lint via `tidy` (actually [tidy for HTML5](http://w3c.github.com/tidy-html5/))\n  * Java - lint via `javac -Xlint`\n  * JavaScript - lint via built in [jshint](http://jshint.org), [jslint](http://jslint.com), or the [closure linter (gjslint)](https://developers.google.com/closure/utilities/docs/linter_howto) (if installed)\n  * Lua - syntax check via `luac`\n  * Objective-J - lint via built-in [capp_lint](https://github.com/aparajita/capp_lint)\n  * Perl - lint via [Perl:Critic](http://perlcritic.com/) or syntax+deprecation check via `perl -c`\n  * PHP - syntax check via `php -l`\n  * Puppet - syntax check via `puppet parser validate`\n  * Python - native, moderately-complete lint\n  * Ruby - syntax check via `ruby -wc`\n  * XML - lint via `xmllint`\n  \n  \n  For more information:\n  ---------------------\n  Please take the time to read the documentation:\n  \n  * Online - https://github.com/SublimeLinter/SublimeLinter\n  * Sublime Text - Select Preferences->Package Settings->SublimeLinter->README\n  \n  \n  IMPORTANT\n  \n  Do NOT edit the default SublimeLinter settings. Your changes will be lost\n  when SublimeLinter is updated. ALWAYS edit the user SublimeLinter settings\n  by selecting \"Preferences->Package Settings->SublimeLinter->Settings - User\".\n  Note that individual settings you include in your user settings will **completely**\n  replace the corresponding default setting, so you must provide that setting in its entirety.\n  \n",
-			"settings":
-			{
-				"buffer_size": 6490,
+				"buffer_size": 92,
 				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"scratch": true
+				"name": "https://github.com/joleal/bitstarter/blob/8b45d1d0"
+			}
+		},
+		{
+			"file": "homework/homework4-2.txt",
+			"settings":
+			{
+				"buffer_size": 92,
+				"line_ending": "Windows",
+				"name": "https://github.com/joleal/bitstarter/blob/f6d75fab"
+			}
+		},
+		{
+			"file": "checks.json",
+			"settings":
+			{
+				"buffer_size": 208,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "web.js",
+			"settings":
+			{
+				"buffer_size": 348,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 104.0,
 		"selected_items":
 		[
 			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"task",
+				"Tasks: New"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Task",
+				"Tasks: New"
 			],
 			[
 				"insta",
 				"Package Control: Install Package"
 			],
 			[
+				"gist",
+				"Package Control: Install Package"
+			],
+			[
+				"oackage",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
 				"proje",
 				"Project: Save As"
-			],
-			[
-				"fetch",
-				"Fetch: Manage"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"prefi",
@@ -112,7 +161,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 405.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -135,6 +184,13 @@
 	},
 	"file_history":
 	[
+		"/D/server/bitstarter/index.html",
+		"/D/server/bitstarter/web.js",
+		"/D/server/bitstarter/homework/homework3-part1",
+		"/D/server/bitstarter/bitstarter.sublime-project",
+		"/D/server/bitstarter/homework/homework3-part2",
+		"/D/server/bitstarter/style.css",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/Fetch.sublime-settings",
 		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/Prefixr/Default (Windows).sublime-keymap",
 		"/D/server/bitstarter/.gitignore",
@@ -142,8 +198,6 @@
 		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/D/server/bitstarter/homework3-part1",
-		"/D/server/bitstarter/index.html",
-		"/D/server/bitstarter/web.js",
 		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
 		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
 		"/D/cygwin/home/User/.ssh/config"
@@ -164,6 +218,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"linediv-",
+			"linediv-c",
+			"<!DOCTYPE html>\n<html lang=\"en\">\n	<head>\n		<meta charset=\"utf-8\">\n		<title>My First Bitstarter</title>\n		<link text=\"text/css\" rel=\"stylesheet\" href=\"http://d396qusza40rc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css\">\n		<style type=\"text/css\">\n			body{\n				padding-top: 20px;\n				padding-bottom: 40px;\n			}\n			.container {\n				width: 960px;\n			}\n			p.lead{\n				padding-top: 15px;\n			}\n			.navigation, .pitch, .section1, .section2, .faq, .footer{\n				padding: 10px 0 10px 0;\n			}\n			.video, .thermometer, .order, .social{\n				border: 1px dotted;\n				text-align: center;\n			}\n			.video{\n				/* Internal borders have 1px width, thus need to add 4 x 1px to 120px */\n				height: 124px;\n				line-height: 124px;\n			}\n			.thermometer, .order, .social {\n				/* line height to vertically center: http://phrogz.net/css/vertical-align/index.html */\n				height: 40px;\n				line-height: 40px;\n			}\n			div.row{\n				border: 1px solid;\n			}\n		</style>\n	</head>\n	<body>\n		<div class=\"container\">\n			<div class=\"row navigation\">\n				<div class=\"span2 logo\">\n					Logo\n				</div>\n				<div class=\"span6 blank\">\n					Blank\n				</div>\n				<div class=\"span4 about\">\n					About\n				</div>\n			</div>\n			<div class=\"row heading\">\n				<div class=\"span12\">\n					<h1>Bitstarter Title</h1>\n				</div>\n			</div>\n			<div class=\"row subheading\">\n				<div class=\"span12\">\n					<p class=\"lead\">This is my first bitstarter project.</p>\n				</div>\n			</div>\n			<div class=\"row pitch\">\n				<div class=\"span6 video\">Video</div>\n				<div class=\"span6\">\n					<div class=\"thermometer\">\n						Thermometer\n					</div>\n					<div class=\"order\">\n						Order\n					</div>\n					<div class=\"social\">\n						Social\n					</div>\n				</div>\n			</div>\n			<div class=\"row section1\">\n				<div class=\"span12\">Marketing Section 1</div>\n			</div>\n			<div class=\"row section2\">\n				<div class=\"span12\">Marketing Section 2</div>\n			</div>\n			<div class=\"row faq\">\n				<div class=\"span12\">FAQ</div>\n			</div>\n			<div class=\"row footer\">\n				<div class=\"span12\">Footer</div>\n			</div>\n		</div>\n	</body>\n</html>\n",
+			"app",
 			"head",
 			">",
 			"<",
@@ -191,29 +249,31 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "web.js",
+					"file": "grader.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 348,
+						"buffer_size": 3128,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								348,
-								348
+								2532,
+								2532
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -223,23 +283,52 @@
 				},
 				{
 					"buffer": 1,
-					"file": "homework/homework3-part1",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 78,
+						"buffer_size": 9581,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								78,
-								78
+								4350,
+								4350
 							]
 						],
 						"settings":
 						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1990.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "homework/homework4-1.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"auto_name": "https://github.com/joleal/bitstarter/blob/8b45d1d0",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -249,25 +338,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "index.html",
+					"buffer": 3,
+					"file": "homework/homework4-2.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 120,
+						"buffer_size": 92,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								120
+								0,
+								92
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"auto_name": "https://github.com/joleal/bitstarter/blob/f6d75fab",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -276,20 +366,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "bitstarter.sublime-project",
+					"buffer": 4,
+					"file": "checks.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 126,
+						"buffer_size": 208,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								33,
-								33
+								208,
+								208
 							]
 						],
 						"settings":
@@ -303,55 +393,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "style.css",
+					"buffer": 5,
+					"file": "web.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 26,
+						"buffer_size": 348,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26,
-								26
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6490,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1535,
-								1494
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -401,6 +464,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"web",
+				"web.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
 			[
 				"ind",
 				"index.html"
